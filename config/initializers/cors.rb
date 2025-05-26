@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'https://music-bands-frontend.vercel.app/' # Replace with specific domain in production
+    origins 'https://music-bands-frontend.vercel.app' # Replace with specific domain in production
     resource '*', headers: :any, methods: [:get, :post]
   end
 end
